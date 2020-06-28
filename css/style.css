@@ -1,0 +1,51 @@
+*{
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+.settings > *{
+	margin-top: 20px;
+}
+.settings{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+input, button{
+	color: black;
+}
+body{
+	background-color: #2e2e2e;
+	padding: 0 20px;
+	display: grid;
+	
+}
+body > *{
+	margin-top: 20px;
+}
+.wrapper{
+	display: flex;
+	justify-content: space-between;
+}
+
+canvas{
+	display: none;
+}
+.output{
+	overflow: hidden;
+	color: #000;
+	resize: none;
+}
+.visible{
+	display: block;
+}
+
+#tilesetImage{
+	color: #fff;
+}
+#canvasDraw{
+	border: 2px solid red;
+}
+#canvasPalette{
+	padding-bottom: 10px;
+}
