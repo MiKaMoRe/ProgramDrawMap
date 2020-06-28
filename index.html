@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lost in the Mist</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body id="body">
+	<div class="wrapper" id="wrapper">
+		<div class="settings">
+			<p>Введите ширину и длинну вашей карты в тайлах</p>
+			<div class="settings__size">
+				<p>Ширина:</p>
+				<input type="text" placeholder="width" id="width" value="10">
+				<p>Высота:</p>
+				<input type="text" placeholder="height" id="height" value="10">
+			</div>
+			<p>Введите размер тайла в пикселях:</p>
+			<div class="settings__tiles">
+				<p>Тайл:</p>
+				<input type="text" id="tile" value="32">
+			</div>
+			<button id="draw1" onclick="drawCanvas()">Нарисовать</button>
+			<p>Введите название слоя</p>
+			<div class="nameLayer">
+				<input type="text" id="name" value="ground" placeholder="name">	
+			</div>
+			<button id="layerAdd" onclick="layerAdd()">Создать слой</button>
+			<button id="clear" onclick="clear()">Clear</button>
+			<p>Загрузите набор тайлов</p>
+			<div>
+				<input id="tilesetImage" type="file" accept="image">
+			</div>
+			<button onclick="output()">Вывести карту в матричном виде</button>
+			<textarea type="text" id="output" class="output" readonly></textarea>
+		</div>
+		<div>
+			<canvas id="canvasDraw" width="320" height="320">
+				Ваш браузер не поддерживает Canvas
+			</canvas>
+		</div>
+	</div>
+	<canvas id="canvasPalette" width="320" height="320">
+		Ваш браузер не поддерживает Canvas
+	</canvas>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
